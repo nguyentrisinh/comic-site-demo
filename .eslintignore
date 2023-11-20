@@ -1,0 +1,8 @@
+.next/
+out/
+node_modules/
+coverage/
+__snapshots__/
+package-lock.json
+yarn.lock
+tailwind.config.js
