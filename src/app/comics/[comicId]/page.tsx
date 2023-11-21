@@ -18,13 +18,15 @@ const Page: FC<PageProps> = ({}) => {
   const { comicId } = useParams();
   const [data, setData] = useState<TComic>();
   const [showMore, setShowMore] = useState<boolean>(false);
+
   useEffect(() => {
     getComic(Array.isArray(comicId) ? comicId[0] : comicId).then(setData);
   }, []);
+
   if (!data) return null;
   return (
     <div>
-      <div className="relative py-12">
+      <div className="relative lg:py-12 py-4">
         <div
           className="blur-3xl absolute left-0 right-0 bottom-0 top-0 bg-cover -z-50"
           style={{
@@ -32,7 +34,7 @@ const Page: FC<PageProps> = ({}) => {
           }}
         />
         <Container>
-          <div className="flex flex-row w-full">
+          <div className="flex lg:flex-row w-full flex-col gap-3">
             <Link href="/">
               <IconButton icon="chevron-left" />
             </Link>
@@ -41,7 +43,7 @@ const Page: FC<PageProps> = ({}) => {
                 <Image src={data.cover.image.url} alt={data.name} fill />
               </div>
             </div>
-            <div className="flex flex-col justify-between items-end">
+            <div className="flex flex-col justify-between lg:items-end items-center gap-3">
               <div>
                 <Button>
                   <div className="flex items-center text-white px-3 font-bold">
