@@ -1,4 +1,4 @@
-##About The Project
+## About The Project
 
 Comic site
 
@@ -14,7 +14,17 @@ npm run build
 # or
 yarn build
 ```
-##
+
+## Considerations:
+
+- Icon color can not be changed because of png type, it should be svg instead.
+
+- We don't have gem icon on price, so I use green circle instead.
+
+- Assumption: I used fluid carousel instead of normal carousel because I think this is better than cut off carousel.
+
+## Q&A:
+
 #### 1. How did you decide on the technical and architectural choices used as part of your solution ?
 
 - Should be the latest stable version to up-to-date with daily improvement.
