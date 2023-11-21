@@ -23,7 +23,7 @@ yarn build
 
 - Two types of components for the best reuse:
 
-  - Presentational component: for displaying only purpose.
+  - Presentational component (in `components/generic` folder): for displaying only purpose.
 
   - Container component: handling side effects for presentational component.
 
