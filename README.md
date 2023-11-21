@@ -19,7 +19,7 @@ yarn build
 
 - Code quality check to persist code style.
 
-- Two types of components to the best reuse:
+- Two types of components for the best reuse:
 
   - Presentational component: for displaying only purpose.
 
@@ -27,13 +27,13 @@ yarn build
 
 #### 2. Are there any improvements you could make to your submission?
 
-- Small and decoupling components -> For example: `ComicsCarousel` component on home page, this inherits from `HomeCarousel` -> `ArrowCarousel` -> `Carousel`.
+- Small and decoupling components -> For example: `ComicsCarousel` component on home page, this inherits from `HomeCarousel` -> `ArrowCarousel` -> `Carousel`, that we can reuse them as many kinds we want
 
 - Development part:
 
     - `husky`: quality check before committing.
 
-    - `lint-staged`: combine with husky for checking only changed files -> this will make the process quicker.
+    - `lint-staged`: combine with `husky` for checking only changed files -> this will make the process quicker.
 
     - Some other eslint rules: for enhancing code quality
 
