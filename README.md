@@ -55,5 +55,7 @@ yarn build
 
 - UX improvements: Loading state with skeleton, hover state for button, transition...
 
+- Favicon
+
 
 
