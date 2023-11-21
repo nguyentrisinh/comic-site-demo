@@ -15,7 +15,7 @@ const BrandsCarousel: FC<BrandsCarouselProps> = ({}) => {
   }, []);
   if (!comics) return null;
   return (
-    <HomeCarousel title="Brands" navigation slidesPerView={5} spaceBetween={20}>
+    <HomeCarousel title="Brands">
       {comics.edges.map(({ node: brand }, index: number) => (
         <swiper-slide key={index}>
           <div className="relative aspect-square rounded-lg overflow-hidden">

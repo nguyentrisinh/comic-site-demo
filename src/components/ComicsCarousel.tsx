@@ -16,7 +16,7 @@ const ComicsCarousel: FC<ComicsCarouselProps> = ({}) => {
   }, []);
   if (!comics) return null;
   return (
-    <HomeCarousel title="Comics" navigation slidesPerView={5} spaceBetween={20}>
+    <HomeCarousel title="Comics">
       {comics.edges.map(({ node: comic }, index: number) => (
         <swiper-slide key={index}>
           <Link href={`/comics/${comic.id}`}>
