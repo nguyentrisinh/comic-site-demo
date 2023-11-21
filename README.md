@@ -1,5 +1,7 @@
 ##About The Project
-This is test assessment 
+
+Comic site
+
 ## Installation
 ```bash
 npm run dev
