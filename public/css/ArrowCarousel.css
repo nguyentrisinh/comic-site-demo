@@ -1,0 +1,38 @@
+.swiper { overflow: visible!important; }
+.swiper-button-next > svg,
+.swiper-button-prev > svg {
+    display: none;
+}
+.swiper-button-next,
+.swiper-button-prev {
+    top: -16px!important;
+    border-radius: 4px;
+    width: 40px!important;
+    height: 40px!important;
+    background-size: 24px;
+    transform: translateY(-50%);
+    background-color: #424242;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 300ms;
+}
+.swiper-button-next {
+    right: 0!important;
+    background-image: url("/images/icons/chevron-right.png");
+}
+
+.swiper-button-prev {
+    right: 52px!important;
+    left: unset!important;
+    background-image: url("/images/icons/chevron-left.png");
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: "";
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: #F4EAF1;
+}

@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build:stg": "export TARGET_ENV=stg && node copyEnvFile.js && next build",
-    "build:prod": "export TARGET_ENV=prod && node copyEnvFile.js && next build",
+    "build:stg": "next build",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install"
@@ -27,6 +26,7 @@
   "devDependencies": {
     "@types/node": "20.4.8",
     "@types/react": "^18.2.37",
+    "autoprefixer": "^10.4.14",
     "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "eslint-config-prettier": "^9.0.0",
