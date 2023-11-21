@@ -63,9 +63,7 @@ yarn build
 
 - SSR for better SEO
 
-- UX improvements: Loading state with skeleton, hover state for button, transition...
-
-- Favicon
+- UX improvements: Loading state with skeleton, hover state for button, transition, favicon...
 
 
 
