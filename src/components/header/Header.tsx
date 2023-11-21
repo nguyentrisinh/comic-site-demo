@@ -2,6 +2,7 @@
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import Link from 'next/link';
 import { FC, useState } from 'react';
 
 import Badge from '@/components/generic/Badge';
@@ -44,12 +45,12 @@ const Header: FC<HeaderProps> = ({}) => {
       <Container>
         <header>
           <nav className="flex justify-between items-center">
-            <div className="relative inline-block">
+            <Link href="/" className="relative inline-block">
               <Image src="/images/logo.png" alt="Logo" width={128} height={32} />
               <div className="absolute -right-1 top-0 translate-x-full">
                 <Badge>BETA</Badge>
               </div>
-            </div>
+            </Link>
             <div className="items-center gap-x-8 hidden lg:flex">
               {menuItemList.map(({ icon, label }) => (
                 <HeaderItem key={label} icon={icon}>

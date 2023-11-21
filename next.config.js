@@ -1,13 +1,15 @@
 /** @type {import("next").NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
+  distDir: 'build',
   images: {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'd11unjture0ske.cloudfront.net',
+        hostname: '*.cloudfront.net',
       },
     ],
+    unoptimized: true,
   },
 };
 
